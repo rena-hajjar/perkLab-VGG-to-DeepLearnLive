@@ -7,7 +7,7 @@ def main(args):
     lblFile = pd.read_csv(args.target_csv_file)
 
     # initializing new column
-    lblFile["Tool_and_US"] = ["" for i in lblFile.index]
+    lblFile["Tool bounding box"] = [[] for i in lblFile.index]
 
     for i in vggRegions.index:
         # get the name of the current frame
